@@ -2,17 +2,21 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="lib/bootstrap.css">
+    <link rel="stylesheet" href="lib/backblue.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <meta charset="UTF-8">
     <title>backblue's Site</title>
 </head>
 <body class="bg-dark text-light">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent mb-4">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top mb-4">
         <div class="container-fluid justify-content-center">
-            <a class="navbar-brand text-decoration-underline" href="#">info</a>
-            <a class="navbar-brand text-decoration-underline mx-4" href="#">projects</a>
+            <a class="navbar-brand text-decoration-underline" href="#info">info</a>
+            <a class="navbar-brand text-decoration-underline mx-4" href="#projects">projects</a>
         </div>
         <div class="container-fluid justify-content-center">
+            <a class="navbar-brand" href="https://github.com" target="_blank">
+                <i class="bi bi-file-earmark-fill"></i>
+            </a>
             <a class="navbar-brand" href="https://github.com/backblue" target="_blank">
                 <i class="bi bi-github"></i>
             </a>
@@ -21,15 +25,32 @@
             </a>
         </div>
     </nav>
-    <div class="container text-left">
-        <h1>Info</h1>
-        <p>Wow</p>
+
+    <div class="container" id="info">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="website-font fw-bold">Hi! I'm Hong Bo.</h1>
+                <p class="website-font">I'm an undergraduate student at <span class="text-info">Columbia University</span>, studying Computer Science.</p>
+                <p class="website-font">I have coded using <span class="orange-color we">Java</span>, <span class="light-blue-color">Python</span>, and <span class="gray-color">C</span>. I also have used <span class="text-success">MySQL</span> in my projects.</p>
+                <br>
+                <p class="website-font">On my free time, I occasionally create projects that applies my skills learnt through the classroom to hopefully, do something interesting. Right now, my most proud project is using Discord Bot wrapper <span class="orange-color">JDA</span> to write a moderation bot that<span class="fst-italic"> automates</span> some grueling tasks that used to be done manually.</p>
+            </div>
+            <div class="col-md-4">
+                <p>Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test </p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="projects">
+        <br>
+        <h1 class="website-font fw-semibold">Projects</h1>
+
+
     </div>
 
-    <div class="container text-left">
-        <h1>Projects</h1>
+    <footer class="text-center text-muted mt-5">
+        <p class="website-font bg-white fw-bolder">© 2025 backblue.dev</p>
+    </footer>
 
-    </div>
     <script src="lib/bootstrap.bundle.js"></script>
 </body>
 </html>
